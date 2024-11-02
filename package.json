@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "start": "node server.js"
-},
+    "dev": "vite",            // For starting the Vite development server
+    "build": "vite build",    // For creating a production build
+    "lint": "eslint .",
+    "preview": "vite preview", // For previewing the production build
+    "start": "node server.js"  // If you have a server file to start the app
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
     "clsx": "^2.1.0",
