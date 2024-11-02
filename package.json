@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "server.js",
-    "build": "your-build-command-here" 
+    "build": "react-scripts build" 
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
