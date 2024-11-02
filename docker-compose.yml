@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    image: energyaudit/saas:latest
+    build: .
+    container_name: energy-audit-app
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - app_data:/app/data
+      - app_uploads:/app/uploads
+      - app_logs:/app/logs
+
+volumes:
+  app_data:
+  app_uploads:
+  app_logs:
